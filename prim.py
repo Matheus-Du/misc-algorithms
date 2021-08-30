@@ -57,8 +57,6 @@ def main():
             # search the sorted queue until a pair of vertices whose 1st vertex is in the MST is found
             currentVertices = sortedMatrix[i]
             i += 1
-        if mstMatrix == []:
-            mstMatrix.append(currentVertices[0])
         # add the 2nd vertex in the pair to the MST & get it's edge-length
         mstMatrix.append(currentVertices[1])
         print(matrix.get(currentVertices))
